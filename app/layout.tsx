@@ -13,24 +13,77 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Vitality Clinics | Healthcare Excellence in Hurghada",
+  metadataBase: new URL("https://the-vitality-clinics.vercel.app"),
+
+  title: {
+    default: "The Vitality Clinics | Best Medical Clinic in Hurghada",
+    template: "%s | The Vitality Clinics",
+  },
+
   description:
-    "The Vitality Clinics in Hurghada provides comprehensive medical care, specialist consultations, travel healthcare services, women's health, 4D ultrasound, and medical support for residents, expatriates, and tourists.",
+    "The Vitality Clinics is a leading medical clinic in Hurghada providing Internal Medicine, Pediatrics, Gynecology, Obstetrics, Infertility Care, 4D Ultrasound, Travel Healthcare Services, Emergency Medical Care, and comprehensive healthcare for residents, expatriates, and tourists.",
+
   keywords: [
-    "The Vitality Clinics",
     "Medical Clinic Hurghada",
-    "Healthcare in Hurghada",
-    "Travel Healthcare Services",
+    "Best Clinic in Hurghada",
     "Doctors in Hurghada",
+    "Medical Center Hurghada",
+    "Internal Medicine Hurghada",
+    "Gynecology Hurghada",
+    "Obstetrics Hurghada",
+    "Women's Health Hurghada",
+    "Infertility Clinic Hurghada",
+    "Fertility Specialist Hurghada",
     "4D Ultrasound Hurghada",
-    "Tourist Medical Care",
+    "Pregnancy Ultrasound Hurghada",
+    "Travel Healthcare Hurghada",
+    "Emergency Clinic Hurghada",
+    "Tourist Medical Care Hurghada",
+    "The Vitality Clinics",
+    "Vitality Medical Care",
   ],
-  authors: [{ name: "Vitality Medical Care" }],
+
+  authors: [
+    {
+      name: "Vitality Medical Care",
+    },
+  ],
+
+  creator: "Vitality Medical Care",
+
+  publisher: "Vitality Medical Care",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
   openGraph: {
-    title: "The Vitality Clinics | Healthcare Excellence in Hurghada",
+    title: "The Vitality Clinics | Best Medical Clinic in Hurghada",
+
     description:
-      "Professional medical care for residents, expatriates, and tourists in Hurghada.",
+      "Professional medical care in Hurghada with experienced specialists, advanced diagnostics, infertility unit, pregnancy care, 4D ultrasonography, and healthcare services for residents and tourists.",
+
+    url: "https://the-vitality-clinics.vercel.app",
+
+    siteName: "The Vitality Clinics",
+
+    locale: "en_US",
+
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "The Vitality Clinics",
+
+    description:
+      "Comprehensive healthcare services in Hurghada for residents, expatriates and tourists.",
+  },
+
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
