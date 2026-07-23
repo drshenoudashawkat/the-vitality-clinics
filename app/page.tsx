@@ -7,15 +7,15 @@ import Services from "../components/Services";
 import Insurance from "../components/Insurance";
 import Tourists from "../components/Tourists";
 import WomenHealth from "../components/WomenHealth";
-import Infertility from "../components/Infertility";
+import FetalMedicine from "../components/Infertility";
 import Ultrasound4D from "../components/Ultrasound4D";
 import Statistics from "../components/Statistics";
-import Gallery from "../components/Gallery";
 import Reviews from "../components/Reviews";
 import FAQ from "../components/FAQ";
 import Appointment from "../components/Appointment";
 import BlogPreview from "../components/BlogPreview";
 import Contact from "../components/Contact";
+import Location from "../components/Location";
 import Footer from "../components/Footer";
 import FloatingButtons from "../components/FloatingButtons";
 
@@ -41,13 +41,11 @@ export default function Home() {
 
         <WomenHealth />
 
-        <Infertility />
+        <FetalMedicine />
 
         <Ultrasound4D />
 
         <Statistics />
-
-        <Gallery />
 
         <Reviews />
 
@@ -58,6 +56,8 @@ export default function Home() {
         <BlogPreview />
 
         <Contact />
+
+        <Location />
       </main>
 
       <FloatingButtons />

@@ -1,150 +1,117 @@
 import Image from "next/image";
-import { ArrowRight, Phone, ShieldCheck, Clock3 } from "lucide-react";
+
+const specialties = [
+  "Internal Medicine",
+  "Women's Health",
+  "Fetal Medicine",
+  "4D Ultrasound",
+  "Pediatrics",
+  "Emergency Care",
+  "Travel Medicine",
+  "International Insurance",
+];
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-white via-emerald-50 to-blue-50 pt-36 pb-24">
+    <section
+      id="home"
+      className="relative min-h-screen overflow-hidden"
+    >
 
-      <div className="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-emerald-200/40 blur-3xl" />
-      <div className="absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-blue-200/40 blur-3xl" />
+      <Image
+        src="/images/hero.png"
+        alt="The Vitality Clinics Hurghada Healthcare"
+        fill
+        priority
+        className="object-cover"
+      />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
 
-        {/* Text */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/40 md:bg-gradient-to-r md:from-black/80 md:via-black/60 md:to-black/30" />
 
-        <div>
 
-          <span className="inline-flex rounded-full bg-emerald-100 px-5 py-2 text-sm font-semibold text-emerald-700">
-            24/7 Travel Healthcare Services
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-5 pt-28 md:px-6">
+
+        <div className="max-w-4xl">
+
+
+          <span className="inline-block rounded-full bg-emerald-600 px-4 py-2 text-xs font-semibold tracking-wide text-white shadow-lg md:px-5 md:text-sm">
+            VITALITY MEDICAL CARE GROUP
           </span>
 
-          <h1 className="mt-7 text-5xl font-extrabold leading-tight text-slate-900 md:text-6xl">
-            Comprehensive
-            <span className="block text-emerald-600">
-              Medical Care
-            </span>
-            In Hurghada
+
+
+          <h1 className="mt-5 text-4xl font-extrabold leading-tight text-white sm:text-5xl md:text-7xl">
+            The Vitality Clinics
           </h1>
 
-          <p className="mt-7 max-w-xl text-lg leading-8 text-gray-600">
-            The Vitality Clinics provides comprehensive healthcare services
-            through experienced physicians, modern diagnostic technology,
-            and patient-centered care for residents, expatriates, and tourists
-            in Hurghada.
+
+
+          <h2 className="mt-3 text-xl font-light text-emerald-300 sm:text-2xl md:text-3xl">
+            Multispecialty Healthcare in Hurghada
+          </h2>
+
+
+
+          <div className="mt-6 h-1 w-20 rounded-full bg-emerald-500" />
+
+
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-200 sm:text-xl md:text-2xl">
+            World-class healthcare services for residents,
+            expatriates, tourists, and international patients
+            with experienced physicians and modern medical technology.
           </p>
 
 
-          <div className="mt-10 flex flex-wrap gap-4">
 
-            <button className="flex items-center gap-2 rounded-xl bg-emerald-600 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-emerald-700">
+          <div className="mt-8 flex flex-wrap gap-2">
+
+            {specialties.map((item) => (
+
+              <span
+                key={item}
+                className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold text-white backdrop-blur-md sm:text-sm"
+              >
+                {item}
+              </span>
+
+            ))}
+
+          </div>
+
+
+
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+
+
+            <a
+              href="#appointment"
+              className="rounded-xl bg-emerald-600 px-8 py-4 text-center font-bold text-white shadow-lg transition hover:bg-emerald-700"
+            >
               Book Appointment
-              <ArrowRight size={20} />
-            </button>
+            </a>
+
 
 
             <a
               href="tel:+201281270005"
-              className="flex items-center gap-2 rounded-xl border-2 border-emerald-600 px-7 py-4 font-semibold text-emerald-700 transition hover:bg-emerald-50"
+              className="rounded-xl border border-white px-8 py-4 text-center font-bold text-white transition hover:bg-white hover:text-black"
             >
-              <Phone size={20} />
               Call Now
             </a>
 
-          </div>
 
 
-          <div className="mt-12 grid grid-cols-2 gap-6">
+            <a
+              href="https://wa.me/201281270005"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-white px-8 py-4 text-center font-bold text-emerald-700 transition hover:bg-gray-100"
+            >
+              WhatsApp
+            </a>
 
-            <div className="flex items-center gap-3">
-
-              <ShieldCheck
-                className="text-emerald-600"
-                size={32}
-              />
-
-              <div>
-
-                <h4 className="font-bold">
-                  International Patients
-                </h4>
-
-                <p className="text-sm text-gray-500">
-                  Professional Support
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div className="flex items-center gap-3">
-
-              <Clock3
-                className="text-emerald-600"
-                size={32}
-              />
-
-              <div>
-
-                <h4 className="font-bold">
-                  24/7 Support
-                </h4>
-
-                <p className="text-sm text-gray-500">
-                  Medical Assistance
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-        </div>
-
-
-
-        {/* Image */}
-
-        <div className="relative">
-
-          <div className="overflow-hidden rounded-[40px] shadow-2xl">
-
-            <Image
-              src="/images/clinic.png"
-              alt="The Vitality Clinics"
-              width={800}
-              height={800}
-              priority
-              className="h-[620px] w-full object-cover"
-            />
-
-          </div>
-
-
-          <div className="absolute bottom-8 left-8 rounded-3xl bg-white/90 p-6 shadow-xl backdrop-blur">
-
-            <h3 className="text-4xl font-extrabold text-emerald-600">
-              12K+
-            </h3>
-
-            <p className="text-gray-600">
-              Patients Served
-            </p>
-
-          </div>
-
-
-          <div className="absolute right-8 top-8 rounded-3xl bg-white/90 p-6 shadow-xl backdrop-blur">
-
-            <h3 className="text-4xl font-extrabold text-emerald-600">
-              15+
-            </h3>
-
-            <p className="text-gray-600">
-              Medical Services
-            </p>
 
           </div>
 

@@ -1,5 +1,10 @@
 import Image from "next/image";
-import { CheckCircle, HeartPulse, Globe2, Stethoscope } from "lucide-react";
+import {
+  CheckCircle,
+  HeartPulse,
+  Globe2,
+  Stethoscope,
+} from "lucide-react";
 
 export default function About() {
   return (
@@ -7,17 +12,19 @@ export default function About() {
       id="about"
       className="bg-gradient-to-b from-white to-slate-50 py-24"
     >
+
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
 
-        {/* Left Image */}
+
+        {/* Image */}
 
         <div className="relative">
 
           <div className="overflow-hidden rounded-[32px] shadow-2xl">
 
             <Image
-              src="/images/clinic.png"
-              alt="The Vitality Clinics"
+              src="/images/about/about-main.jpg"
+              alt="The Vitality Clinics medical clinic in Hurghada"
               width={700}
               height={700}
               className="h-[600px] w-full object-cover transition duration-700 hover:scale-105"
@@ -25,87 +32,162 @@ export default function About() {
 
           </div>
 
+
+
           <div className="absolute -bottom-8 -right-8 rounded-3xl bg-white p-6 shadow-xl">
 
-            <h3 className="text-5xl font-bold text-blue-700">
-              12K+
+            <h3 className="text-3xl font-bold text-emerald-700">
+              Trusted
             </h3>
 
             <p className="mt-2 text-gray-600">
-              Happy Patients
+              Healthcare Excellence
             </p>
 
           </div>
 
+
         </div>
 
-        {/* Right Content */}
+
+
+
+
+        {/* Content */}
 
         <div>
 
-          <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
-            About Us
+
+          <span className="rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-700">
+            About The Vitality Clinics
           </span>
 
+
+
+
           <h2 className="mt-6 text-5xl font-extrabold leading-tight text-slate-900">
-            Healthcare
-            <span className="block text-blue-700">
-              You Can Trust
+
+            Comprehensive Healthcare
+
+            <span className="block text-emerald-700">
+              In The Heart of Hurghada
             </span>
+
           </h2>
 
+
+
+
+
           <p className="mt-8 text-lg leading-8 text-gray-600">
-            The Vitality Clinics is a modern multidisciplinary medical clinic
-            located in Hurghada, providing comprehensive healthcare services
-            with experienced physicians, advanced medical technology, and
-            international standards of care.
+
+            The Vitality Clinics is a modern multispecialty medical clinic in
+            Hurghada, providing professional healthcare services through
+            experienced doctors, advanced diagnostic technology, and
+            patient-centered medical care.
+
           </p>
 
+
+
+
           <p className="mt-5 text-lg leading-8 text-gray-600">
-            We proudly care for Egyptian residents, expatriates, and tourists,
-            offering high-quality medical services in a comfortable and
-            professional environment.
+
+            We provide healthcare solutions for residents, expatriates,
+            tourists, and international patients, including specialist
+            consultations, emergency care, women's health, pregnancy care,
+            4D ultrasound, laboratory services, and international insurance
+            assistance.
+
           </p>
+
+
+
+
 
           <div className="mt-10 grid gap-5">
 
-            <div className="flex items-center gap-4">
-              <CheckCircle className="text-blue-700" size={26} />
-              <span className="text-lg">
-                Experienced Medical Specialists
-              </span>
-            </div>
 
             <div className="flex items-center gap-4">
-              <HeartPulse className="text-blue-700" size={26} />
+              <CheckCircle
+                className="text-emerald-700"
+                size={26}
+              />
+
               <span className="text-lg">
-                Comprehensive Healthcare Services
+                Experienced Specialist Doctors
               </span>
+
             </div>
 
-            <div className="flex items-center gap-4">
-              <Globe2 className="text-blue-700" size={26} />
-              <span className="text-lg">
-                International Insurance Assistance
-              </span>
-            </div>
+
 
             <div className="flex items-center gap-4">
-              <Stethoscope className="text-blue-700" size={26} />
+
+              <HeartPulse
+                className="text-emerald-700"
+                size={26}
+              />
+
               <span className="text-lg">
-                24/7 Medical Support
+                Complete Multispecialty Healthcare
               </span>
+
             </div>
+
+
+
+
+            <div className="flex items-center gap-4">
+
+              <Globe2
+                className="text-emerald-700"
+                size={26}
+              />
+
+              <span className="text-lg">
+                International Patient & Insurance Support
+              </span>
+
+            </div>
+
+
+
+
+            <div className="flex items-center gap-4">
+
+              <Stethoscope
+                className="text-emerald-700"
+                size={26}
+              />
+
+              <span className="text-lg">
+                Professional Medical Care in Hurghada
+              </span>
+
+            </div>
+
 
           </div>
 
-          <button className="mt-10 rounded-xl bg-blue-700 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-blue-800">
-            Learn More About Us
-          </button>
+
+
+
+
+          <a
+            href="#services"
+            className="mt-10 inline-flex rounded-xl bg-emerald-700 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-emerald-800"
+          >
+            Explore Our Medical Services
+          </a>
+
+
 
         </div>
 
+
       </div>
+
     </section>
   );
 }
