@@ -15,11 +15,21 @@ export default function FloatingButtons() {
           rel="noopener noreferrer"
           aria-label="WhatsApp The Vitality Clinics"
           className="
-            flex h-12 w-12 items-center justify-center
-            rounded-full bg-green-600 text-white
-            shadow-xl transition-all duration-300
-            hover:scale-110 hover:bg-green-700
-            sm:h-14 sm:w-14
+            flex
+            h-12
+            w-12
+            items-center
+            justify-center
+            rounded-full
+            bg-emerald-600
+            text-white
+            shadow-xl
+            transition-all
+            duration-300
+            hover:scale-110
+            hover:bg-emerald-700
+            sm:h-14
+            sm:w-14
           "
         >
           <MessageCircle size={25} />
@@ -28,12 +38,28 @@ export default function FloatingButtons() {
 
         <span
           className="
-          pointer-events-none absolute right-16 top-1/2
-          hidden -translate-y-1/2 rounded-lg
-          bg-slate-900 px-3 py-2 text-sm text-white
-          opacity-0 transition
-          group-hover:block group-hover:opacity-100
-          sm:block
+            pointer-events-none
+            absolute
+            right-16
+            top-1/2
+            hidden
+            -translate-y-1/2
+            rounded-xl
+            border
+            border-slate-700
+            bg-slate-900/90
+            px-4
+            py-2
+            text-sm
+            font-semibold
+            text-white
+            shadow-xl
+            backdrop-blur-md
+            opacity-0
+            transition
+            group-hover:block
+            group-hover:opacity-100
+            sm:block
           "
         >
           WhatsApp
@@ -54,11 +80,21 @@ export default function FloatingButtons() {
           href="tel:+201281270005"
           aria-label="Call The Vitality Clinics"
           className="
-            flex h-12 w-12 items-center justify-center
-            rounded-full bg-blue-700 text-white
-            shadow-xl transition-all duration-300
-            hover:scale-110 hover:bg-blue-800
-            sm:h-14 sm:w-14
+            flex
+            h-12
+            w-12
+            items-center
+            justify-center
+            rounded-full
+            bg-[#0B3C5D]
+            text-white
+            shadow-xl
+            transition-all
+            duration-300
+            hover:scale-110
+            hover:bg-[#092F48]
+            sm:h-14
+            sm:w-14
           "
         >
           <Phone size={24}/>
@@ -67,12 +103,28 @@ export default function FloatingButtons() {
 
         <span
           className="
-          pointer-events-none absolute right-16 top-1/2
-          hidden -translate-y-1/2 rounded-lg
-          bg-slate-900 px-3 py-2 text-sm text-white
-          opacity-0 transition
-          group-hover:block group-hover:opacity-100
-          sm:block
+            pointer-events-none
+            absolute
+            right-16
+            top-1/2
+            hidden
+            -translate-y-1/2
+            rounded-xl
+            border
+            border-slate-700
+            bg-slate-900/90
+            px-4
+            py-2
+            text-sm
+            font-semibold
+            text-white
+            shadow-xl
+            backdrop-blur-md
+            opacity-0
+            transition
+            group-hover:block
+            group-hover:opacity-100
+            sm:block
           "
         >
           Call Clinic
@@ -97,11 +149,21 @@ export default function FloatingButtons() {
           rel="noopener noreferrer"
           aria-label="The Vitality Clinics Location"
           className="
-            flex h-12 w-12 items-center justify-center
-            rounded-full bg-red-600 text-white
-            shadow-xl transition-all duration-300
-            hover:scale-110 hover:bg-red-700
-            sm:h-14 sm:w-14
+            flex
+            h-12
+            w-12
+            items-center
+            justify-center
+            rounded-full
+            bg-red-600
+            text-white
+            shadow-xl
+            transition-all
+            duration-300
+            hover:scale-110
+            hover:bg-red-700
+            sm:h-14
+            sm:w-14
           "
         >
           <MapPin size={24}/>
@@ -111,12 +173,28 @@ export default function FloatingButtons() {
 
         <span
           className="
-          pointer-events-none absolute right-16 top-1/2
-          hidden -translate-y-1/2 rounded-lg
-          bg-slate-900 px-3 py-2 text-sm text-white
-          opacity-0 transition
-          group-hover:block group-hover:opacity-100
-          sm:block
+            pointer-events-none
+            absolute
+            right-16
+            top-1/2
+            hidden
+            -translate-y-1/2
+            rounded-xl
+            border
+            border-slate-700
+            bg-slate-900/90
+            px-4
+            py-2
+            text-sm
+            font-semibold
+            text-white
+            shadow-xl
+            backdrop-blur-md
+            opacity-0
+            transition
+            group-hover:block
+            group-hover:opacity-100
+            sm:block
           "
         >
           Location

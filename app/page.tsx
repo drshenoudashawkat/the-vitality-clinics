@@ -19,6 +19,7 @@ import Location from "../components/Location";
 import Footer from "../components/Footer";
 import FloatingButtons from "../components/FloatingButtons";
 import SectionDivider from "../components/SectionDivider";
+import FadeIn from "../components/FadeIn";
 
 export default function Home() {
   return (
@@ -27,71 +28,71 @@ export default function Home() {
 
       <main className="pt-28 sm:pt-32">
 
-        <Hero />
+        <FadeIn><Hero /></FadeIn>
 
         <SectionDivider />
 
-        <About />
+        <FadeIn><About /></FadeIn>
 
         <SectionDivider />
 
-        <WhyChooseUs />
+        <FadeIn><WhyChooseUs /></FadeIn>
 
         <SectionDivider />
 
-        <MedicalDepartments />
+        <FadeIn><MedicalDepartments /></FadeIn>
 
         <SectionDivider />
 
-        <Services />
+        <FadeIn><Services /></FadeIn>
 
         <SectionDivider />
 
-        <Insurance />
+        <FadeIn><Insurance /></FadeIn>
 
         <SectionDivider />
 
-        <Tourists />
+        <FadeIn><Tourists /></FadeIn>
 
         <SectionDivider />
 
-        <WomenHealth />
+        <FadeIn><WomenHealth /></FadeIn>
 
         <SectionDivider />
 
-        <FetalMedicine />
+        <FadeIn><FetalMedicine /></FadeIn>
 
         <SectionDivider />
 
-        <Ultrasound4D />
+        <FadeIn><Ultrasound4D /></FadeIn>
 
         <SectionDivider />
 
-        <Statistics />
+        <FadeIn><Statistics /></FadeIn>
 
         <SectionDivider />
 
-        <Reviews />
+        <FadeIn><Reviews /></FadeIn>
 
         <SectionDivider />
 
-        <FAQ />
+        <FadeIn><FAQ /></FadeIn>
 
         <SectionDivider />
 
-        <Appointment />
+        <FadeIn><Appointment /></FadeIn>
 
         <SectionDivider />
 
-        <BlogPreview />
+        <FadeIn><BlogPreview /></FadeIn>
 
         <SectionDivider />
 
-        <Contact />
+        <FadeIn><Contact /></FadeIn>
 
         <SectionDivider />
 
-        <Location />
+        <FadeIn><Location /></FadeIn>
 
       </main>
 

@@ -4,7 +4,7 @@ export default function Location() {
   return (
     <section
       id="location"
-      className="bg-slate-50 py-24"
+      className="bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 py-24"
     >
       <div className="mx-auto max-w-7xl px-6">
 
@@ -13,17 +13,19 @@ export default function Location() {
 
           <div>
 
-            <span className="rounded-full bg-emerald-100 px-5 py-2 text-sm font-semibold text-emerald-700">
+            <span className="rounded-full bg-emerald-500/20 px-5 py-2 text-sm font-semibold text-emerald-300">
               Clinic Location
             </span>
 
 
-            <h2 className="mt-6 text-4xl font-extrabold text-slate-900">
+
+            <h2 className="mt-6 text-4xl font-extrabold text-white">
               Located in the Heart of Hurghada
             </h2>
 
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+
+            <p className="mt-6 text-lg leading-8 text-slate-300">
               The Vitality Clinics is conveniently located in the heart of
               Hurghada, providing easy access to professional healthcare
               services for residents, expatriates, tourists, and international
@@ -33,17 +35,19 @@ export default function Location() {
 
 
 
+
             <div className="mt-8 flex gap-4">
+
 
               <MapPin
                 size={32}
-                className="text-emerald-600"
+                className="text-emerald-400"
               />
 
 
               <div>
 
-                <h3 className="font-bold text-slate-900">
+                <h3 className="font-bold text-white">
                   Our Address
                 </h3>
 
@@ -52,21 +56,27 @@ export default function Location() {
                   href="https://share.google/BQGURfwiWLWdd14pb"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 block text-gray-600 hover:text-emerald-600"
+                  className="mt-2 block text-slate-300 hover:text-emerald-400"
                 >
                   The Vitality Clinics,
                   <br />
                   Hurghada, Red Sea, Egypt
                 </a>
 
+
               </div>
+
 
             </div>
 
 
 
 
+
+
+
             <div className="mt-8 flex flex-wrap gap-4">
+
 
 
               <a
@@ -75,19 +85,28 @@ export default function Location() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700"
               >
+
                 <Navigation size={20} />
+
                 Open in Google Maps
+
               </a>
+
+
 
 
 
               <a
                 href="tel:+201281270005"
-                className="inline-flex items-center gap-2 rounded-xl border-2 border-emerald-600 px-6 py-3 font-semibold text-emerald-700 transition hover:bg-emerald-50"
+                className="inline-flex items-center gap-2 rounded-xl border-2 border-emerald-400 px-6 py-3 font-semibold text-emerald-300 transition hover:bg-white hover:text-emerald-700"
               >
+
                 <Phone size={20} />
+
                 Call Clinic
+
               </a>
+
 
 
             </div>
@@ -100,7 +119,9 @@ export default function Location() {
 
 
 
-          <div className="overflow-hidden rounded-3xl bg-white shadow-xl">
+
+
+          <div className="overflow-hidden rounded-3xl bg-white p-2 shadow-2xl">
 
 
             <iframe
@@ -108,7 +129,7 @@ export default function Location() {
               width="100%"
               height="450"
               loading="lazy"
-              className="border-0"
+              className="rounded-2xl border-0"
               allowFullScreen
               referrerPolicy="strict-origin-when-cross-origin"
             />

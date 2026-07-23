@@ -43,7 +43,13 @@ export default function Reviews() {
   return (
     <section
       id="reviews"
-      className="bg-gradient-to-b from-white to-slate-50 py-24"
+      className="
+        bg-gradient-to-br
+        from-[#0F172A]
+        via-[#163A4A]
+        to-[#0B3C5D]
+        py-24
+      "
     >
 
       <div className="mx-auto max-w-7xl px-6">
@@ -51,17 +57,48 @@ export default function Reviews() {
 
         <div className="text-center">
 
-          <span className="rounded-full bg-yellow-100 px-5 py-2 text-sm font-semibold text-yellow-700">
+
+          <span
+            className="
+              inline-block
+              rounded-full
+              bg-yellow-400/20
+              px-5
+              py-2
+              text-sm
+              font-semibold
+              text-yellow-300
+            "
+          >
             Patient Reviews & Experiences
           </span>
 
 
-          <h2 className="mt-6 text-5xl font-extrabold text-slate-900">
+
+          <h2
+            className="
+              mt-6
+              text-4xl
+              font-extrabold
+              text-white
+              md:text-5xl
+            "
+          >
             Trusted Healthcare Experiences in Hurghada
           </h2>
 
 
-          <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-gray-600">
+
+          <p
+            className="
+              mx-auto
+              mt-6
+              max-w-4xl
+              text-lg
+              leading-8
+              text-slate-300
+            "
+          >
             Discover healthcare experiences from residents, expatriates, and
             international visitors who received professional medical services
             at The Vitality Clinics in Hurghada.
@@ -72,18 +109,40 @@ export default function Reviews() {
 
 
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+
+        <div
+          className="
+            mt-16
+            grid
+            gap-8
+            md:grid-cols-2
+            lg:grid-cols-3
+          "
+        >
 
 
           {reviews.map((review, index) => (
 
             <div
               key={index}
-              className="rounded-3xl bg-white p-8 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              className="
+                rounded-3xl
+                border
+                border-white/10
+                bg-white/10
+                p-8
+                backdrop-blur-xl
+                shadow-xl
+                transition
+                duration-300
+                hover:-translate-y-2
+                hover:bg-white/15
+              "
             >
 
 
-              <div className="flex gap-1 text-yellow-500">
+              <div className="flex gap-1 text-yellow-400">
 
                 {[1,2,3,4,5].map((star) => (
 
@@ -99,20 +158,24 @@ export default function Reviews() {
 
 
 
-              <p className="mt-6 leading-7 text-gray-600">
+
+              <p className="mt-6 leading-7 text-slate-200">
                 "{review.text}"
               </p>
 
 
 
-              <div className="mt-6 border-t pt-5">
 
-                <h3 className="font-bold text-slate-900">
+
+              <div className="mt-6 border-t border-white/20 pt-5">
+
+
+                <h3 className="font-bold text-white">
                   {review.name}
                 </h3>
 
 
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-slate-300">
                   {review.country}
                 </p>
 
@@ -120,15 +183,18 @@ export default function Reviews() {
               </div>
 
 
+
             </div>
 
           ))}
+
 
 
         </div>
 
 
       </div>
+
 
     </section>
   );

@@ -50,28 +50,64 @@ export default function WhyChooseUs() {
   return (
     <section
       id="why-us"
-      className="bg-slate-50 py-16 sm:py-20 lg:py-24"
+      className="
+        relative
+        overflow-hidden
+        bg-slate-900
+        py-20
+        sm:py-24
+      "
     >
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+
+
+      <div className="relative mx-auto max-w-7xl px-6">
 
 
         <div className="mx-auto max-w-4xl text-center">
 
 
-          <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-xs sm:text-sm font-semibold text-emerald-700">
+          <span
+            className="
+              inline-flex
+              rounded-full
+              bg-emerald-500/20
+              px-5
+              py-2
+              text-sm
+              font-bold
+              text-emerald-400
+            "
+          >
             Why Choose The Vitality Clinics
           </span>
 
 
 
-          <h2 className="mt-5 text-3xl leading-tight font-extrabold text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2
+            className="
+              mt-6
+              text-4xl
+              font-extrabold
+              leading-tight
+              text-white
+              sm:text-5xl
+            "
+          >
             Trusted Healthcare Excellence in Hurghada
           </h2>
 
 
 
-          <p className="mt-5 text-base leading-7 text-gray-600 sm:text-lg sm:leading-8">
+          <p
+            className="
+              mt-5
+              text-lg
+              leading-8
+              text-slate-300
+            "
+          >
             The Vitality Clinics provides professional healthcare services in
             Hurghada for residents, expatriates, tourists, and international
             patients through experienced doctors, advanced technology, and
@@ -85,37 +121,64 @@ export default function WhyChooseUs() {
 
 
 
-        <div className="mt-10 grid gap-5 sm:mt-14 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          className="
+            mt-14
+            grid
+            gap-6
+            sm:grid-cols-2
+            lg:grid-cols-3
+          "
+        >
 
+          {features.map((item)=>{
 
-          {features.map((item, index)=>{
-
-            const Icon = item.icon;
+            const Icon=item.icon;
 
 
             return (
 
               <div
-                key={index}
+                key={item.title}
                 className="
-                rounded-3xl 
-                bg-white 
-                p-6 
-                sm:p-8
-                shadow-sm 
-                transition 
-                duration-300
-                hover:-translate-y-2
-                hover:shadow-xl
+                  group
+                  rounded-[32px]
+                  border
+                  border-slate-700
+                  bg-slate-800
+                  p-8
+                  shadow-md
+                  transition
+                  duration-500
+                  hover:-translate-y-3
+                  hover:shadow-2xl
                 "
               >
 
 
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100">
+                <div
+                  className="
+                    flex
+                    h-16
+                    w-16
+                    items-center
+                    justify-center
+                    rounded-2xl
+                    bg-emerald-500/20
+                    transition
+                    duration-500
+                    group-hover:bg-emerald-600
+                  "
+                >
 
                   <Icon
-                    size={30}
-                    className="text-emerald-600"
+                    size={32}
+                    className="
+                      text-emerald-400
+                      transition
+                      duration-500
+                      group-hover:text-white
+                    "
                   />
 
                 </div>
@@ -123,17 +186,32 @@ export default function WhyChooseUs() {
 
 
 
-                <h3 className="mt-5 text-xl font-bold leading-snug text-slate-900 sm:text-2xl">
+
+                <h3
+                  className="
+                    mt-6
+                    text-xl
+                    font-extrabold
+                    leading-snug
+                    text-white
+                  "
+                >
                   {item.title}
                 </h3>
 
 
 
 
-                <p className="mt-3 text-sm leading-7 text-gray-600 sm:text-base">
+
+                <p
+                  className="
+                    mt-4
+                    leading-7
+                    text-slate-300
+                  "
+                >
                   {item.description}
                 </p>
-
 
 
               </div>
@@ -147,6 +225,7 @@ export default function WhyChooseUs() {
 
 
       </div>
+
 
     </section>
   );

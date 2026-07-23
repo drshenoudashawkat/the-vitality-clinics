@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #E8EEF2;
+  --foreground: #1E293B;
+
+  --primary: #0097A7;
+  --primary-dark: #0B3C5D;
+  --medical-green: #2E9E6F;
+  --soft-blue: #DCE8EE;
+  --navy: #0B3C5D;
+  --gold: #C9A227;
+  --text: #334155;
 }
+
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-medical-green: var(--medical-green);
+  --color-soft-blue: var(--soft-blue);
+  --color-navy: var(--navy);
+  --color-gold: var(--gold);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+html {
+  scroll-behavior: smooth;
 }
 
+
 body {
-  background: var(--background);
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(0,151,167,0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(201,162,39,0.08),
+      transparent 30%
+    ),
+    #E8EEF2;
+
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+
+section {
+  position: relative;
+}
+
+
+.medical-card {
+
+  background:
+    rgba(255,255,255,0.75);
+
+  border:
+    1px solid rgba(11,60,93,0.10);
+
+  box-shadow:
+    0 15px 40px rgba(11,60,93,0.12);
+
+  backdrop-filter:
+    blur(12px);
+
+}
+
+
+::selection {
+  background: #0097A7;
+  color: white;
 }

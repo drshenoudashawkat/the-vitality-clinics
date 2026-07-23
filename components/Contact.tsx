@@ -1,52 +1,65 @@
-import { Phone, Mail, MapPin, MessageCircle, Navigation } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Navigation,
+  Clock3,
+} from "lucide-react";
 
 export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-gradient-to-br from-emerald-50 via-white to-blue-50 py-20 sm:py-24"
+      className="bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 py-20 sm:py-24"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-6">
 
         <div className="text-center">
 
-          <span className="rounded-full bg-emerald-100 px-5 py-2 text-sm font-semibold text-emerald-700">
+          <span className="rounded-full bg-emerald-500/20 px-5 py-2 text-sm font-semibold text-emerald-300">
             Contact The Vitality Clinics
           </span>
 
-          <h2 className="mt-6 text-3xl font-extrabold text-slate-900 sm:text-5xl">
-            Get Medical Assistance in Hurghada
+
+          <h2 className="mt-6 text-3xl font-extrabold text-white sm:text-5xl">
+            Get Professional Medical Care in Hurghada
           </h2>
 
-          <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
-            Contact The Vitality Clinics for medical consultations,
-            appointments, emergency support, and healthcare services.
-            Located in the heart of Hurghada, our clinic provides
-            professional medical care for residents, expatriates,
-            tourists, and international patients.
+
+          <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg">
+            Contact The Vitality Clinics for medical consultations, specialist
+            appointments, emergency support, tourist healthcare, pregnancy
+            care, and international patient assistance in Hurghada.
           </p>
 
         </div>
 
 
+
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
 
 
-          <div className="rounded-3xl bg-white p-6 shadow-xl sm:p-8">
+
+          <div className="rounded-3xl bg-white p-6 shadow-2xl sm:p-8">
+
 
             <h3 className="text-2xl font-bold text-slate-900 sm:text-3xl">
               Contact Information
             </h3>
 
 
+
             <div className="mt-8 space-y-6">
 
 
               <div className="flex gap-4">
+
                 <Phone className="text-emerald-600" />
 
                 <div>
-                  <p className="font-semibold">
+
+                  <p className="font-semibold text-slate-900">
                     Phone
                   </p>
 
@@ -56,8 +69,12 @@ export default function Contact() {
                   >
                     +20 128 127 0005
                   </a>
+
                 </div>
+
               </div>
+
+
 
 
 
@@ -66,16 +83,24 @@ export default function Contact() {
                 <MessageCircle className="text-green-600" />
 
                 <div>
-                  <p className="font-semibold">
+
+                  <p className="font-semibold text-slate-900">
                     WhatsApp Support
                   </p>
 
-                  <p className="text-gray-600">
+                  <a
+                    href="https://wa.me/201281270005"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-green-600"
+                  >
                     Available 24/7 for medical assistance
-                  </p>
+                  </a>
+
                 </div>
 
               </div>
+
 
 
 
@@ -86,9 +111,10 @@ export default function Contact() {
 
                 <div>
 
-                  <p className="font-semibold">
+                  <p className="font-semibold text-slate-900">
                     Email
                   </p>
+
 
                   <a
                     href="mailto:vitalitymedicalcare@gmail.com"
@@ -104,15 +130,18 @@ export default function Contact() {
 
 
 
+
+
               <div className="flex gap-4">
 
                 <MapPin className="text-red-500" />
 
                 <div>
 
-                  <p className="font-semibold">
+                  <p className="font-semibold text-slate-900">
                     Location
                   </p>
+
 
                   <a
                     href="https://share.google/BQGURfwiWLWdd14pb"
@@ -122,7 +151,7 @@ export default function Contact() {
                   >
                     The Vitality Clinics
                     <br />
-                    Heart of Hurghada, Red Sea, Egypt
+                    Hurghada, Red Sea, Egypt
                   </a>
 
                 </div>
@@ -130,21 +159,56 @@ export default function Contact() {
               </div>
 
 
+
+
+
+
+              <div className="flex gap-4">
+
+                <Clock3 className="text-emerald-600" />
+
+                <div>
+
+                  <p className="font-semibold text-slate-900">
+                    Working Hours
+                  </p>
+
+
+                  <p className="text-gray-600">
+                    24/7 Medical Support & Emergency Assistance
+                  </p>
+
+                </div>
+
+              </div>
+
+
+
             </div>
 
 
 
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+
+
+
+            <div className="mt-10 grid gap-4 sm:grid-cols-3">
+
 
 
               <a
                 href="tel:+201281270005"
-                className="inline-flex items-center justify-center gap-3 rounded-xl bg-blue-600 px-6 py-4 font-bold text-white shadow-lg transition hover:bg-blue-700"
+                className="flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-4 font-bold text-white shadow-lg transition hover:bg-blue-700"
               >
-                <Phone size={22}/>
-                Call Now
+
+                <Phone size={20} />
+
+                Call
+
               </a>
+
+
+
 
 
 
@@ -152,11 +216,16 @@ export default function Contact() {
                 href="https://wa.me/201281270005"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 rounded-xl bg-green-600 px-6 py-4 font-bold text-white shadow-lg transition hover:bg-green-700"
+                className="flex items-center justify-center gap-2 rounded-xl bg-green-600 px-5 py-4 font-bold text-white shadow-lg transition hover:bg-green-700"
               >
-                <MessageCircle size={22}/>
+
+                <MessageCircle size={20} />
+
                 WhatsApp
+
               </a>
+
+
 
 
 
@@ -165,11 +234,15 @@ export default function Contact() {
                 href="https://share.google/BQGURfwiWLWdd14pb"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 rounded-xl bg-emerald-600 px-6 py-4 font-bold text-white shadow-lg transition hover:bg-emerald-700"
+                className="flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 py-4 font-bold text-white shadow-lg transition hover:bg-emerald-700"
               >
-                <Navigation size={22}/>
+
+                <Navigation size={20} />
+
                 Map
+
               </a>
+
 
 
             </div>
@@ -181,7 +254,10 @@ export default function Contact() {
 
 
 
-          <div className="overflow-hidden rounded-3xl bg-white shadow-xl">
+
+
+
+          <div className="overflow-hidden rounded-3xl bg-white shadow-2xl">
 
 
             <iframe
@@ -192,6 +268,8 @@ export default function Contact() {
 
 
           </div>
+
+
 
 
         </div>

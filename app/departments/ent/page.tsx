@@ -1,12 +1,12 @@
 import Link from "next/link";
 import {
-  Ambulance,
-  Globe,
+  Ear,
+  Stethoscope,
   ShieldCheck,
   HeartPulse,
 } from "lucide-react";
 
-export default function TravelMedicinePage() {
+export default function ENTPage() {
   return (
     <main className="bg-gradient-to-b from-white to-slate-50 py-24">
 
@@ -17,18 +17,18 @@ export default function TravelMedicinePage() {
         <div className="text-center">
 
           <span className="rounded-full bg-emerald-100 px-5 py-2 text-sm font-semibold text-emerald-700">
-            Travel Medicine
+            ENT Specialist
           </span>
 
           <h1 className="mt-6 text-4xl font-extrabold text-slate-900 md:text-5xl">
-            Travel Healthcare Services in Hurghada
+            Ear, Nose & Throat Care in Hurghada
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-            The Vitality Clinics provides comprehensive medical care for
-            tourists, expatriates, international visitors, and business
-            travelers in Hurghada with rapid diagnosis, treatment, and medical
-            support.
+            The Vitality Clinics provides comprehensive Ear, Nose & Throat
+            (ENT) services for adults and children, offering accurate diagnosis,
+            modern treatment, and personalized medical care for a wide range of
+            ENT conditions.
           </p>
 
         </div>
@@ -41,19 +41,18 @@ export default function TravelMedicinePage() {
 
           <div className="rounded-3xl bg-white p-8 shadow-lg">
 
-            <Ambulance
+            <Ear
               size={40}
               className="text-emerald-600"
             />
 
             <h2 className="mt-6 text-2xl font-bold text-slate-900">
-              Urgent Medical Care
+              Ear Care
             </h2>
 
             <p className="mt-4 leading-7 text-gray-600">
-              Fast assessment and treatment for acute illnesses, injuries,
-              dehydration, food poisoning, gastroenteritis, fever, and minor
-              emergencies.
+              Diagnosis and treatment of ear infections, hearing problems,
+              tinnitus, ear wax removal, dizziness, and balance disorders.
             </p>
 
           </div>
@@ -62,19 +61,18 @@ export default function TravelMedicinePage() {
 
           <div className="rounded-3xl bg-white p-8 shadow-lg">
 
-            <Globe
+            <Stethoscope
               size={40}
               className="text-emerald-600"
             />
 
             <h2 className="mt-6 text-2xl font-bold text-slate-900">
-              International Patient Support
+              Nose & Sinus Care
             </h2>
 
             <p className="mt-4 leading-7 text-gray-600">
-              Medical consultations, insurance assistance, medical reports,
-              prescriptions, referrals, and healthcare guidance for travelers
-              from around the world.
+              Professional management of sinusitis, allergic rhinitis, nasal
+              blockage, nosebleeds, nasal polyps, and breathing difficulties.
             </p>
 
           </div>
@@ -89,19 +87,18 @@ export default function TravelMedicinePage() {
             />
 
             <h2 className="mt-6 text-2xl font-bold text-slate-900">
-              Hotel & Resort Medical Services
+              Throat & Pediatric ENT
             </h2>
 
             <p className="mt-4 leading-7 text-gray-600">
-              Medical care for hotel guests including doctor consultations,
-              IV therapy, wound care, respiratory infections, sun allergy,
-              and follow-up treatment.
+              Evaluation and treatment of sore throat, tonsillitis, hoarseness,
+              swallowing disorders, snoring, and ENT conditions affecting
+              children.
             </p>
 
           </div>
 
         </div>
-
 
 
 
@@ -123,10 +120,10 @@ export default function TravelMedicinePage() {
           </div>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            We provide professional travel medicine services with experienced
-            physicians, multilingual support, rapid diagnosis, international
-            insurance assistance, and high-quality healthcare for visitors,
-            residents, and expatriates in Hurghada.
+            We provide high-quality ENT care using modern diagnostic equipment,
+            evidence-based treatment, and personalized medical plans for both
+            adults and children. Our goal is to ensure fast diagnosis, effective
+            treatment, and excellent patient experience.
           </p>
 
         </div>

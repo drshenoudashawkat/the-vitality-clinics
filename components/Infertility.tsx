@@ -50,7 +50,15 @@ export default function FetalMedicine() {
   return (
     <section
       id="fetal-medicine"
-      className="bg-slate-50 py-24"
+      className="
+        relative
+        overflow-hidden
+        bg-gradient-to-br
+        from-[#0F172A]
+        via-[#163A4A]
+        to-[#0B3C5D]
+        py-24
+      "
     >
 
       <div className="mx-auto max-w-7xl px-6">
@@ -59,19 +67,48 @@ export default function FetalMedicine() {
         <div className="text-center">
 
 
-          <span className="rounded-full bg-pink-100 px-5 py-2 text-sm font-semibold text-pink-700">
+          <span
+            className="
+              inline-block
+              rounded-full
+              bg-pink-500/20
+              px-5
+              py-2
+              text-sm
+              font-semibold
+              text-pink-300
+              backdrop-blur-md
+            "
+          >
             Fetal Medicine Unit
           </span>
 
 
 
-          <h2 className="mt-6 text-4xl font-extrabold text-slate-900">
+          <h2
+            className="
+              mt-6
+              text-4xl
+              font-extrabold
+              text-white
+              md:text-5xl
+            "
+          >
             Advanced Fetal Medicine & Pregnancy Care in Hurghada
           </h2>
 
 
 
-          <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-gray-600">
+          <p
+            className="
+              mx-auto
+              mt-5
+              max-w-3xl
+              text-lg
+              leading-8
+              text-slate-300
+            "
+          >
             The Vitality Clinics provides advanced fetal medicine and pregnancy
             care in Hurghada, including detailed fetal anatomy scans, pregnancy
             ultrasound, Doppler studies, fetal growth monitoring, high-risk
@@ -85,7 +122,18 @@ export default function FetalMedicine() {
 
             <a
               href="#appointment"
-              className="inline-flex rounded-xl bg-emerald-600 px-7 py-3 font-semibold text-white shadow-lg transition hover:bg-emerald-700"
+              className="
+                inline-flex
+                rounded-xl
+                bg-[#0097A7]
+                px-8
+                py-4
+                font-bold
+                text-white
+                shadow-xl
+                transition
+                hover:bg-[#007C89]
+              "
             >
               Book Pregnancy Consultation
             </a>
@@ -99,7 +147,15 @@ export default function FetalMedicine() {
 
 
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          className="
+            mt-16
+            grid
+            gap-8
+            md:grid-cols-2
+            lg:grid-cols-3
+          "
+        >
 
 
           {services.map((item) => {
@@ -111,21 +167,60 @@ export default function FetalMedicine() {
 
               <div
                 key={item.title}
-                className="rounded-3xl bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+                className="
+                  rounded-3xl
+                  border
+                  border-white/10
+                  bg-white/10
+                  p-8
+                  backdrop-blur-xl
+                  shadow-xl
+                  transition
+                  duration-300
+                  hover:-translate-y-3
+                  hover:bg-white/15
+                "
               >
 
-                <Icon
-                  size={36}
-                  className="text-emerald-600"
-                />
+
+                <div
+                  className="
+                    inline-flex
+                    rounded-2xl
+                    bg-[#0097A7]/20
+                    p-4
+                  "
+                >
+
+                  <Icon
+                    size={36}
+                    className="text-[#8DE0E8]"
+                  />
+
+                </div>
 
 
-                <h3 className="mt-6 text-2xl font-bold text-slate-900">
+
+                <h3
+                  className="
+                    mt-6
+                    text-2xl
+                    font-bold
+                    text-white
+                  "
+                >
                   {item.title}
                 </h3>
 
 
-                <p className="mt-4 leading-7 text-gray-600">
+
+                <p
+                  className="
+                    mt-4
+                    leading-7
+                    text-slate-300
+                  "
+                >
                   {item.description}
                 </p>
 

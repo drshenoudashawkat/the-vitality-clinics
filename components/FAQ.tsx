@@ -1,9 +1,9 @@
 const faqs = [
-{
-  question: "Where is The Vitality Clinics located?",
-  answer:
-    "The Vitality Clinics is located in the heart of Hurghada, offering easy and convenient access for residents, expatriates, tourists, and international visitors. Our clinic provides professional healthcare services in a comfortable and easily reachable location close to the main areas of Hurghada.",
-},
+  {
+    question: "Where is The Vitality Clinics located?",
+    answer:
+      "The Vitality Clinics is located in the heart of Hurghada, offering easy and convenient access for residents, expatriates, tourists, and international visitors. Our clinic provides professional healthcare services in a comfortable and easily reachable location close to the main areas of Hurghada.",
+  },
   {
     question: "Do I need an appointment before visiting the clinic?",
     answer:
@@ -50,24 +50,59 @@ export default function FAQ() {
   return (
     <section
       id="faq"
-      className="bg-white py-24"
+      className="
+        bg-gradient-to-br
+        from-[#0F172A]
+        via-[#163A4A]
+        to-[#0B3C5D]
+        py-24
+      "
     >
+
       <div className="mx-auto max-w-5xl px-6">
 
 
         <div className="text-center">
 
-          <span className="rounded-full bg-blue-100 px-5 py-2 text-sm font-semibold text-blue-700">
+          <span
+            className="
+              inline-block
+              rounded-full
+              bg-[#0097A7]/20
+              px-5
+              py-2
+              text-sm
+              font-semibold
+              text-[#8DE0E8]
+            "
+          >
             Frequently Asked Questions
           </span>
 
 
-          <h2 className="mt-6 text-4xl font-extrabold text-slate-900">
+          <h2
+            className="
+              mt-6
+              text-4xl
+              font-extrabold
+              text-white
+              md:text-5xl
+            "
+          >
             Common Questions About Our Medical Services in Hurghada
           </h2>
 
 
-          <p className="mx-auto mt-5 max-w-4xl text-lg leading-8 text-gray-600">
+          <p
+            className="
+              mx-auto
+              mt-5
+              max-w-4xl
+              text-lg
+              leading-8
+              text-slate-300
+            "
+          >
             Learn more about appointments, insurance support, tourist
             healthcare, women's health services, 4D ultrasound, and medical
             specialties available at The Vitality Clinics.
@@ -77,32 +112,48 @@ export default function FAQ() {
 
 
 
+
         <div className="mt-14 space-y-6">
+
 
           {faqs.map((faq) => (
 
             <div
               key={faq.question}
-              className="rounded-2xl border border-gray-200 bg-slate-50 p-7 transition hover:shadow-md"
+              className="
+                rounded-3xl
+                border
+                border-white/10
+                bg-white/10
+                p-7
+                backdrop-blur-xl
+                shadow-xl
+                transition
+                hover:-translate-y-1
+                hover:bg-white/15
+              "
             >
 
-              <h3 className="text-xl font-bold text-slate-900">
+              <h3 className="text-xl font-bold text-white">
                 {faq.question}
               </h3>
 
 
-              <p className="mt-3 leading-7 text-gray-600">
+              <p className="mt-3 leading-7 text-slate-300">
                 {faq.answer}
               </p>
+
 
             </div>
 
           ))}
 
+
         </div>
 
 
       </div>
+
     </section>
   );
 }

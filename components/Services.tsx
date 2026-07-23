@@ -64,25 +64,74 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-gradient-to-b from-slate-50 to-white py-24"
+      className="
+        relative
+        overflow-hidden
+        bg-slate-900
+        py-24
+      "
     >
 
-      <div className="mx-auto max-w-7xl px-6">
+      <div
+        className="
+          absolute
+          inset-0
+          bg-gradient-to-br
+          from-slate-900
+          via-slate-800
+          to-slate-900
+        "
+      />
 
 
-        <div className="text-center">
+      <div className="relative mx-auto max-w-7xl px-6">
 
-          <span className="rounded-full bg-emerald-100 px-5 py-2 text-sm font-semibold text-emerald-700">
+
+        <div className="mx-auto max-w-4xl text-center">
+
+
+          <span
+            className="
+              inline-flex
+              rounded-full
+              bg-emerald-500/20
+              px-5
+              py-2
+              text-sm
+              font-bold
+              text-emerald-400
+            "
+          >
             Healthcare Services in Hurghada
           </span>
 
 
-          <h2 className="mt-6 text-5xl font-extrabold text-slate-900">
+
+          <h2
+            className="
+              mt-6
+              text-4xl
+              font-extrabold
+              leading-tight
+              text-white
+              sm:text-5xl
+            "
+          >
             Complete Medical Solutions For Residents & Visitors
           </h2>
 
 
-          <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-gray-600">
+
+          <p
+            className="
+              mx-auto
+              mt-6
+              max-w-4xl
+              text-lg
+              leading-8
+              text-slate-300
+            "
+          >
             The Vitality Clinics provides comprehensive healthcare services in
             Hurghada including medical consultations, emergency care, tourist
             healthcare, laboratory diagnostics, women's health, pregnancy care,
@@ -96,10 +145,19 @@ export default function Services() {
 
 
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+        <div
+          className="
+            mt-16
+            grid
+            gap-7
+            sm:grid-cols-2
+            lg:grid-cols-4
+          "
+        >
 
 
-          {services.map((service, index) => {
+          {services.map((service,index)=>{
 
             const Icon = service.icon;
 
@@ -108,32 +166,84 @@ export default function Services() {
 
               <div
                 key={index}
-                className="group rounded-3xl bg-white p-8 shadow-lg transition duration-300 hover:-translate-y-3 hover:shadow-2xl"
+                className="
+                  group
+                  rounded-[32px]
+                  border
+                  border-slate-700
+                  bg-slate-800
+                  p-8
+                  shadow-md
+                  transition
+                  duration-500
+                  hover:-translate-y-3
+                  hover:shadow-2xl
+                "
               >
 
-                <div className="inline-flex rounded-2xl bg-emerald-100 p-5 text-emerald-600 transition group-hover:bg-emerald-600 group-hover:text-white">
 
-                  <Icon size={42} />
-
+                <div
+                  className="
+                    inline-flex
+                    rounded-2xl
+                    bg-emerald-500/20
+                    p-5
+                    text-emerald-400
+                    transition
+                    duration-500
+                    group-hover:bg-emerald-600
+                    group-hover:text-white
+                  "
+                >
+                  <Icon size={40}/>
                 </div>
 
 
 
-                <h3 className="mt-6 text-xl font-bold text-slate-900">
+                <h3
+                  className="
+                    mt-6
+                    text-xl
+                    font-extrabold
+                    leading-snug
+                    text-white
+                  "
+                >
                   {service.title}
                 </h3>
 
 
 
-                <p className="mt-4 text-sm leading-7 text-gray-600">
+                <p
+                  className="
+                    mt-4
+                    text-sm
+                    leading-7
+                    text-slate-300
+                  "
+                >
                   {service.text}
                 </p>
 
 
 
+
                 <a
                   href="#contact"
-                  className="mt-6 inline-flex rounded-xl bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
+                  className="
+                    mt-6
+                    inline-flex
+                    rounded-xl
+                    bg-emerald-600
+                    px-5
+                    py-3
+                    text-sm
+                    font-bold
+                    text-white
+                    shadow-md
+                    transition
+                    hover:bg-emerald-700
+                  "
                 >
                   Book Service
                 </a>
