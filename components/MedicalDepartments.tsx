@@ -122,13 +122,15 @@ const departments = [
 
 export default function MedicalDepartments() {
   return (
-   <section
-  id="medical-specialties"
+    <section
+      id="medical-specialties"
       className="
         relative
         overflow-hidden
         bg-slate-900
-        py-24
+        py-16
+        sm:py-24
+        min-h-screen
       "
     >
 
@@ -144,7 +146,7 @@ export default function MedicalDepartments() {
       />
 
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-6">
 
 
         <div className="mx-auto max-w-4xl text-center">
@@ -166,11 +168,10 @@ export default function MedicalDepartments() {
           </span>
 
 
-
           <h2
             className="
               mt-6
-              text-4xl
+              text-3xl
               font-extrabold
               text-white
               sm:text-5xl
@@ -178,14 +179,18 @@ export default function MedicalDepartments() {
           >
             Comprehensive Healthcare Services & Specialist Doctors
           </h2>
-                    <p
+
+
+          <p
             className="
               mx-auto
               mt-5
               max-w-4xl
-              text-lg
-              leading-8
+              text-base
+              leading-7
               text-slate-300
+              sm:text-lg
+              sm:leading-8
             "
           >
             The Vitality Clinics provides comprehensive healthcare services in
@@ -199,13 +204,12 @@ export default function MedicalDepartments() {
 
 
 
-
-
         <div
           className="
-            mt-16
+            mt-12
             grid
-            gap-7
+            grid-cols-1
+            gap-5
             sm:grid-cols-2
             lg:grid-cols-3
           "
@@ -221,25 +225,24 @@ export default function MedicalDepartments() {
                 key={item.title}
                 className="
                   group
-                  rounded-[32px]
+                  rounded-3xl
                   border
                   border-slate-700
                   bg-slate-800
-                  p-8
-                  shadow-md
+                  p-6
+                  shadow-lg
                   transition
                   duration-500
-                  hover:-translate-y-3
+                  hover:-translate-y-2
                   hover:shadow-2xl
                 "
               >
 
-
                 <div
                   className="
                     flex
-                    h-16
-                    w-16
+                    h-14
+                    w-14
                     items-center
                     justify-center
                     rounded-2xl
@@ -251,7 +254,7 @@ export default function MedicalDepartments() {
                 >
 
                   <Icon
-                    size={34}
+                    size={30}
                     className="
                       text-emerald-400
                       transition
@@ -262,11 +265,10 @@ export default function MedicalDepartments() {
                 </div>
 
 
-
                 <h3
                   className="
-                    mt-6
-                    text-2xl
+                    mt-5
+                    text-xl
                     font-extrabold
                     text-white
                   "
@@ -275,11 +277,11 @@ export default function MedicalDepartments() {
                 </h3>
 
 
-
                 <p
                   className="
-                    mt-4
-                    leading-7
+                    mt-3
+                    text-sm
+                    leading-6
                     text-slate-300
                   "
                 >
@@ -287,26 +289,24 @@ export default function MedicalDepartments() {
                 </p>
 
 
-
                 <a
                   href={`/departments/${item.slug}`}
                   className="
-                    mt-6
+                    mt-5
                     inline-flex
                     rounded-xl
                     bg-emerald-600
                     px-5
                     py-3
+                    text-sm
                     font-bold
                     text-white
-                    shadow-md
                     transition
                     hover:bg-emerald-700
                   "
                 >
                   Learn More
                 </a>
-
 
               </div>
 
