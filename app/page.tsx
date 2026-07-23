@@ -18,46 +18,81 @@ import Contact from "../components/Contact";
 import Location from "../components/Location";
 import Footer from "../components/Footer";
 import FloatingButtons from "../components/FloatingButtons";
+import SectionDivider from "../components/SectionDivider";
 
 export default function Home() {
   return (
     <>
       <Navbar />
 
-      <main>
+      <main className="pt-28 sm:pt-32">
+
         <Hero />
+
+        <SectionDivider />
 
         <About />
 
+        <SectionDivider />
+
         <WhyChooseUs />
+
+        <SectionDivider />
 
         <MedicalDepartments />
 
+        <SectionDivider />
+
         <Services />
+
+        <SectionDivider />
 
         <Insurance />
 
+        <SectionDivider />
+
         <Tourists />
+
+        <SectionDivider />
 
         <WomenHealth />
 
+        <SectionDivider />
+
         <FetalMedicine />
+
+        <SectionDivider />
 
         <Ultrasound4D />
 
+        <SectionDivider />
+
         <Statistics />
+
+        <SectionDivider />
 
         <Reviews />
 
+        <SectionDivider />
+
         <FAQ />
+
+        <SectionDivider />
 
         <Appointment />
 
+        <SectionDivider />
+
         <BlogPreview />
+
+        <SectionDivider />
 
         <Contact />
 
+        <SectionDivider />
+
         <Location />
+
       </main>
 
       <FloatingButtons />
