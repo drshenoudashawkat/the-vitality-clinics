@@ -1,140 +1,184 @@
-export const metadata = {
-  title: "Infertility Unit | The Vitality Clinics",
-  description:
-    "Comprehensive infertility assessment and fertility care in Hurghada. Our Infertility Unit offers personalized evaluation, ovulation monitoring, reproductive ultrasound, and evidence-based fertility management.",
-};
+import Link from "next/link";
+import {
+  ScanHeart,
+  Baby,
+  HeartPulse,
+  Activity,
+  ShieldCheck,
+  CalendarCheck,
+  Stethoscope,
+} from "lucide-react";
 
-export default function InfertilityPage() {
+const services = [
+  {
+    icon: ScanHeart,
+    title: "Detailed Fetal Anatomy Scan",
+    description:
+      "Advanced fetal anatomy assessment to evaluate fetal development, detect abnormalities, and provide detailed pregnancy evaluation.",
+  },
+  {
+    icon: Baby,
+    title: "Fetal Growth Monitoring",
+    description:
+      "Regular ultrasound follow-up to monitor fetal growth, weight estimation, and overall fetal wellbeing throughout pregnancy.",
+  },
+  {
+    icon: HeartPulse,
+    title: "Doppler Ultrasound Assessment",
+    description:
+      "Advanced Doppler studies to assess placental blood flow, fetal circulation, and pregnancy health.",
+  },
+  {
+    icon: Activity,
+    title: "High-Risk Pregnancy Care",
+    description:
+      "Specialized monitoring and follow-up for high-risk pregnancies requiring additional medical attention.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Advanced Ultrasound Technology",
+    description:
+      "Modern ultrasound equipment including detailed fetal imaging and advanced prenatal diagnostic assessment.",
+  },
+];
+
+export default function FetalMedicineUnitPage() {
   return (
     <main className="bg-white">
 
-      {/* Hero */}
-      <section className="bg-emerald-600 py-24 text-white">
-        <div className="mx-auto max-w-6xl px-6">
-          <h1 className="text-5xl font-extrabold">
-            Infertility Unit
-          </h1>
 
-          <p className="mt-6 max-w-3xl text-xl leading-9 text-emerald-100">
-            Comprehensive fertility assessment, reproductive health evaluation,
-            ovulation monitoring, and personalized treatment planning for couples
-            seeking pregnancy.
-          </p>
-        </div>
-      </section>
+      <section className="bg-gradient-to-br from-pink-50 via-white to-emerald-50 py-24">
 
-      {/* About */}
-      <section className="py-24">
-        <div className="mx-auto max-w-6xl px-6">
+        <div className="mx-auto max-w-7xl px-6">
 
-          <h2 className="text-4xl font-bold text-slate-900">
-            Comprehensive Fertility Care
-          </h2>
+          <div className="max-w-4xl">
 
-          <p className="mt-8 text-lg leading-9 text-gray-600">
-            Our Infertility Unit provides evidence-based fertility assessment for
-            both women and men. We focus on identifying the underlying causes of
-            infertility and developing individualized management plans using
-            modern diagnostic techniques and international clinical guidelines.
-          </p>
+            <span className="rounded-full bg-pink-100 px-5 py-2 text-sm font-semibold text-pink-700">
+              Fetal Medicine Unit
+            </span>
 
-          <p className="mt-6 text-lg leading-9 text-gray-600">
-            We understand that fertility concerns can be emotionally challenging.
-            Our experienced team offers compassionate, confidential, and
-            patient-centered care throughout every stage of the fertility journey.
-          </p>
 
-        </div>
-      </section>
+            <h1 className="mt-6 text-4xl font-extrabold leading-tight text-slate-900 md:text-6xl">
+              Advanced Fetal Medicine & Pregnancy Care in Hurghada
+            </h1>
 
-      {/* Services */}
-      <section className="bg-slate-50 py-24">
-        <div className="mx-auto max-w-6xl px-6">
 
-          <h2 className="text-4xl font-bold text-slate-900">
-            Our Services
-          </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              The Vitality Clinics provides advanced fetal medicine services
+              including fetal anatomy scans, pregnancy ultrasound, Doppler
+              studies, fetal growth monitoring, and specialized care for
+              normal and high-risk pregnancies.
+            </p>
 
-          <div className="mt-12 grid gap-8 md:grid-cols-2">
 
-            <div className="rounded-3xl bg-white p-8 shadow">
-              <h3 className="text-2xl font-bold">
-                Female Fertility Assessment
-              </h3>
+            <div className="mt-10 flex flex-wrap gap-4">
 
-              <ul className="mt-6 space-y-3 text-gray-600">
-                <li>• Ovulation assessment</li>
-                <li>• Hormonal evaluation</li>
-                <li>• Ovarian reserve assessment</li>
-                <li>• Pelvic ultrasound</li>
-                <li>• Uterine evaluation</li>
-              </ul>
+
+              <Link
+                href="#contact"
+                className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-7 py-4 font-bold text-white transition hover:bg-emerald-700"
+              >
+                <CalendarCheck size={22} />
+                Book Appointment
+              </Link>
+
+
+
+              <a
+                href="tel:+201281270005"
+                className="inline-flex items-center gap-2 rounded-xl border-2 border-emerald-600 px-7 py-4 font-bold text-emerald-700 transition hover:bg-emerald-50"
+              >
+                <Stethoscope size={22} />
+                Call Clinic
+              </a>
+
+
             </div>
 
-            <div className="rounded-3xl bg-white p-8 shadow">
-              <h3 className="text-2xl font-bold">
-                Male Fertility Assessment
-              </h3>
-
-              <ul className="mt-6 space-y-3 text-gray-600">
-                <li>• Semen analysis</li>
-                <li>• Medical evaluation</li>
-                <li>• Hormonal investigations</li>
-                <li>• Lifestyle counseling</li>
-                <li>• Personalized management</li>
-              </ul>
-            </div>
 
           </div>
 
         </div>
+
       </section>
 
-      {/* When to Visit */}
-      <section className="py-24">
-        <div className="mx-auto max-w-6xl px-6">
 
-          <h2 className="text-4xl font-bold text-slate-900">
-            When Should You Seek Fertility Assessment?
-          </h2>
 
-          <div className="mt-10 rounded-3xl bg-emerald-50 p-10">
 
-            <ul className="space-y-4 text-lg leading-8 text-gray-700">
-              <li>• Trying to conceive for 12 months without success.</li>
-              <li>• Women over 35 trying for more than 6 months.</li>
-              <li>• Irregular menstrual cycles.</li>
-              <li>• Previous miscarriages.</li>
-              <li>• Known hormonal disorders.</li>
-              <li>• Previous pelvic surgery.</li>
-              <li>• Male fertility concerns.</li>
-            </ul>
+      <section className="py-20">
+
+        <div className="mx-auto max-w-7xl px-6">
+
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+
+            {services.map((service) => {
+
+              const Icon = service.icon;
+
+
+              return (
+
+                <div
+                  key={service.title}
+                  className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
+                >
+
+                  <Icon
+                    size={42}
+                    className="text-emerald-600"
+                  />
+
+
+                  <h2 className="mt-6 text-2xl font-bold text-slate-900">
+                    {service.title}
+                  </h2>
+
+
+                  <p className="mt-4 leading-7 text-gray-600">
+                    {service.description}
+                  </p>
+
+
+                </div>
+
+              );
+
+            })}
+
 
           </div>
 
+
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-emerald-600 py-24 text-center text-white">
-
-        <h2 className="text-4xl font-bold">
-          Book Your Fertility Consultation
-        </h2>
-
-        <p className="mx-auto mt-6 max-w-3xl text-xl text-emerald-100">
-          Our experienced specialists are committed to providing comprehensive,
-          compassionate, and confidential fertility care tailored to your needs.
-        </p>
-
-        <a
-          href="/#contact"
-          className="mt-10 inline-block rounded-xl bg-white px-10 py-4 text-lg font-bold text-emerald-700 transition hover:bg-gray-100"
-        >
-          Book Appointment
-        </a>
 
       </section>
+
+
+
+
+      <section className="bg-slate-50 py-20">
+
+        <div className="mx-auto max-w-4xl px-6 text-center">
+
+
+          <h2 className="text-3xl font-extrabold text-slate-900">
+            Trusted Pregnancy & Fetal Care in Hurghada
+          </h2>
+
+
+          <p className="mt-5 text-lg leading-8 text-gray-600">
+            Our fetal medicine services focus on accurate diagnosis,
+            detailed pregnancy monitoring, and compassionate care for
+            mothers and babies using advanced medical technology.
+          </p>
+
+
+        </div>
+
+      </section>
+
 
     </main>
   );

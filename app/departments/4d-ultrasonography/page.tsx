@@ -1,139 +1,142 @@
-export const metadata = {
-  title: "4D Ultrasonography | The Vitality Clinics",
-  description:
-    "Advanced 4D ultrasonography in Hurghada for pregnancy follow-up, fetal assessment, gynecology, and women's health using modern ultrasound technology.",
-};
-
-export default function Ultrasound4DPage() {
+export default function FourDUltrasoundPage() {
   return (
-    <main className="bg-white">
+    <main className="min-h-screen bg-white px-6 py-32">
 
-      {/* Hero */}
-      <section className="bg-indigo-600 py-24 text-white">
-        <div className="mx-auto max-w-6xl px-6">
+      <section className="mx-auto max-w-6xl">
 
-          <h1 className="text-5xl font-extrabold">
-            4D Ultrasonography
+        <div className="text-center">
+
+          <span className="rounded-full bg-purple-100 px-5 py-2 text-sm font-semibold text-purple-700">
+            4D Ultrasound & Fetal Medicine Unit
+          </span>
+
+          <h1 className="mt-6 text-4xl font-extrabold text-slate-900 md:text-5xl">
+            Advanced 4D Ultrasound & Fetal Medicine Care in Hurghada
           </h1>
 
-          <p className="mt-6 max-w-3xl text-xl leading-9 text-indigo-100">
-            High-quality ultrasound imaging for pregnancy, fetal wellbeing,
-            gynecology, infertility assessment, and women's health using
-            advanced 4D technology.
+          <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-gray-600">
+            The Vitality Clinics provides advanced 4D ultrasound and fetal
+            medicine services in Hurghada, offering accurate pregnancy
+            assessment, detailed fetal imaging, and specialist antenatal care.
+            Our modern ultrasound technology helps monitor fetal growth,
+            development, and wellbeing throughout pregnancy.
           </p>
 
         </div>
-      </section>
 
-      {/* About */}
-      <section className="py-24">
-        <div className="mx-auto max-w-6xl px-6">
 
-          <h2 className="text-4xl font-bold text-slate-900">
-            Advanced Diagnostic Imaging
-          </h2>
 
-          <p className="mt-8 text-lg leading-9 text-gray-600">
-            Our modern ultrasound unit provides detailed imaging that supports
-            accurate diagnosis and comprehensive pregnancy follow-up. We combine
-            advanced equipment with experienced specialists to deliver reliable,
-            patient-centered care.
-          </p>
+        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-          <p className="mt-6 text-lg leading-9 text-gray-600">
-            4D ultrasound allows real-time visualization while supporting
-            routine obstetric examinations, fetal growth assessment, and
-            gynecological evaluation.
-          </p>
 
-        </div>
-      </section>
+          <div className="rounded-3xl bg-slate-50 p-8 shadow-sm">
+            <h2 className="text-2xl font-bold text-slate-900">
+              High-Quality 4D Pregnancy Ultrasound
+            </h2>
 
-      {/* Services */}
-      <section className="bg-slate-50 py-24">
-        <div className="mx-auto max-w-6xl px-6">
-
-          <h2 className="text-4xl font-bold text-slate-900">
-            Ultrasound Services
-          </h2>
-
-          <div className="mt-12 grid gap-8 md:grid-cols-2">
-
-            <div className="rounded-3xl bg-white p-8 shadow">
-              <h3 className="text-2xl font-bold">
-                Pregnancy Ultrasound
-              </h3>
-
-              <ul className="mt-6 space-y-3 text-gray-600">
-                <li>• Early pregnancy assessment</li>
-                <li>• Dating scan</li>
-                <li>• Fetal growth monitoring</li>
-                <li>• Fetal wellbeing assessment</li>
-                <li>• Placental evaluation</li>
-              </ul>
-            </div>
-
-            <div className="rounded-3xl bg-white p-8 shadow">
-              <h3 className="text-2xl font-bold">
-                Women's Health Imaging
-              </h3>
-
-              <ul className="mt-6 space-y-3 text-gray-600">
-                <li>• Pelvic ultrasound</li>
-                <li>• Gynecological assessment</li>
-                <li>• Ovarian evaluation</li>
-                <li>• Fertility ultrasound</li>
-                <li>• Uterine assessment</li>
-              </ul>
-            </div>
-
+            <p className="mt-4 leading-7 text-gray-600">
+              Experience detailed real-time fetal imaging with advanced 4D
+              ultrasound technology, allowing parents and specialists to
+              visualize fetal movements and facial features with exceptional
+              clarity.
+            </p>
           </div>
 
-        </div>
-      </section>
 
-      {/* Advantages */}
-      <section className="py-24">
-        <div className="mx-auto max-w-6xl px-6">
 
-          <h2 className="text-4xl font-bold text-slate-900">
-            Why Choose Our 4D Ultrasound Unit?
-          </h2>
+          <div className="rounded-3xl bg-slate-50 p-8 shadow-sm">
+            <h2 className="text-2xl font-bold text-slate-900">
+              Fetal Growth & Wellbeing Assessment
+            </h2>
 
-          <div className="mt-10 rounded-3xl bg-indigo-50 p-10">
-
-            <ul className="space-y-4 text-lg leading-8 text-gray-700">
-              <li>• Modern high-resolution ultrasound equipment.</li>
-              <li>• Experienced obstetrics and gynecology specialists.</li>
-              <li>• Detailed fetal anatomical assessment.</li>
-              <li>• Pregnancy follow-up from early to late gestation.</li>
-              <li>• Fertility and gynecological imaging.</li>
-              <li>• Comfortable and private examination rooms.</li>
-            </ul>
-
+            <p className="mt-4 leading-7 text-gray-600">
+              Comprehensive fetal monitoring including growth evaluation,
+              fetal anatomy assessment, Doppler studies, and pregnancy
+              wellbeing follow-up by experienced specialists.
+            </p>
           </div>
 
+
+
+          <div className="rounded-3xl bg-slate-50 p-8 shadow-sm">
+            <h2 className="text-2xl font-bold text-slate-900">
+              High-Risk Pregnancy Monitoring
+            </h2>
+
+            <p className="mt-4 leading-7 text-gray-600">
+              Specialized care and advanced ultrasound evaluation for high-risk
+              pregnancies, supporting early detection and proper pregnancy
+              management.
+            </p>
+          </div>
+
+
+
+          <div className="rounded-3xl bg-slate-50 p-8 shadow-sm">
+            <h2 className="text-2xl font-bold text-slate-900">
+              Detailed Fetal Anatomy Scan
+            </h2>
+
+            <p className="mt-4 leading-7 text-gray-600">
+              Advanced fetal anatomy screening to evaluate fetal development
+              and provide accurate medical assessment during pregnancy.
+            </p>
+          </div>
+
+
+
+          <div className="rounded-3xl bg-slate-50 p-8 shadow-sm">
+            <h2 className="text-2xl font-bold text-slate-900">
+              Professional Pregnancy Care
+            </h2>
+
+            <p className="mt-4 leading-7 text-gray-600">
+              Complete antenatal follow-up with personalized medical guidance
+              from experienced healthcare professionals in a comfortable
+              clinical environment.
+            </p>
+          </div>
+
+
+
+          <div className="rounded-3xl bg-slate-50 p-8 shadow-sm">
+            <h2 className="text-2xl font-bold text-slate-900">
+              Modern Ultrasound Technology
+            </h2>
+
+            <p className="mt-4 leading-7 text-gray-600">
+              Using advanced diagnostic ultrasound equipment to provide
+              accurate imaging and reliable pregnancy assessment for mothers
+              and families.
+            </p>
+          </div>
+
+
         </div>
-      </section>
 
-      {/* CTA */}
-      <section className="bg-indigo-600 py-24 text-center text-white">
 
-        <h2 className="text-4xl font-bold">
-          Schedule Your Ultrasound Examination
-        </h2>
 
-        <p className="mx-auto mt-6 max-w-3xl text-xl text-indigo-100">
-          Book your appointment for advanced 4D ultrasonography with our
-          experienced medical team at The Vitality Clinics.
-        </p>
+        <div className="mt-16 rounded-3xl bg-emerald-600 p-10 text-center">
 
-        <a
-          href="/#contact"
-          className="mt-10 inline-block rounded-xl bg-white px-10 py-4 text-lg font-bold text-indigo-700 hover:bg-gray-100"
-        >
-          Book Appointment
-        </a>
+          <h2 className="text-3xl font-extrabold text-white">
+            Book Your 4D Ultrasound Appointment in Hurghada
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-3xl text-emerald-100">
+            Contact The Vitality Clinics today for advanced pregnancy
+            ultrasound, fetal medicine consultation, and professional maternal
+            care.
+          </p>
+
+          <a
+            href="#appointment"
+            className="mt-8 inline-flex rounded-xl bg-white px-8 py-4 font-bold text-emerald-700 transition hover:bg-gray-100"
+          >
+            Book Appointment
+          </a>
+
+        </div>
+
 
       </section>
 
