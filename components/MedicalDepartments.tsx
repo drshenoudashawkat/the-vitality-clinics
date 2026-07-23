@@ -122,8 +122,8 @@ const departments = [
 
 export default function MedicalDepartments() {
   return (
-    <section
-      id="services"
+   <section
+  id="medical-specialties"
       className="
         relative
         overflow-hidden

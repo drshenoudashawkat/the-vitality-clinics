@@ -40,7 +40,7 @@ export default function Home() {
 
         <SectionDivider />
 
-        <FadeIn><MedicalDepartments /></FadeIn>
+        <MedicalDepartments />
 
         <SectionDivider />
 
